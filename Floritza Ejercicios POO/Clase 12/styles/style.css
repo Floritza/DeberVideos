@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+::selection {
+    background-color: black;
+    color: #9cf0b1;
+}
+
+header {
+    background-color: #e9f863;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.menu__item a {
+    background: rgb(138, 161, 33);
+    border: 5px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+/******************* PSEUDOCLASES *******************/
+.menu__item:nth-child(2) a {
+    background: #89af2f;
+    border: 5px solid #a13389;
+    color: white;
+}
+
+.menu__item:first-child a {
+    background: rgb(0, 0, 0);
+}
+
+.menu__item:last-child a {
+    background: rgb(10, 165, 10);
+}
+
+.menu__item a:empty {
+    background: rgb(229, 233, 229);
+}
+
+.menu__item a:not(.menu__link) {
+    border-color: rgb(7, 5, 5);
+}
+
+.menu__item a:hover {
+    background: #000000;
+    color: white;
+}
+
+
+
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../img/imagen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 300px;
+}
+
+
+/********** Pseudoelementos ***********/
+.imagenPrincipal h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding-inline: 15px;
+}
+
+.imagenPrincipal h2::first-letter {
+    color: #e96acd;
+}
+
+.imagenPrincipal h2::selection {
+    background: #e96acd;
+    color: black;
+}
+
+.imagenPrincipal p {
+    color: white;
+    text-align: center;
+}
+
+.imagenPrincipal p::first-line {
+    color: #e478cc;
+}
+
+.imagenPrincipal p::selection {
+    background: rgb(0, 0, 0);
+    color: #e96acd;
+}
+
+
+
+.tarjetitas {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tarjetita {
+    background-color: #e96bb4;
+    border-radius: 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+}
+
+.pie {
+    background-color: #6ee96a;
+    color: rgb(0, 0, 0);
+    padding-block: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetitados {
+    flex: 1;
+}
